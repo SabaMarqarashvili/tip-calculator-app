@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background: #c5e4e7;
+}
+
+header img {
+  display: flex;
+  margin-inline: auto;
+  margin-top: 50px;
+}
+
+.input-panel {
+  border-radius: 25px 25px 0px 0px;
+  background: #fff;
+  max-width: 375px;
+  height: auto;
+  margin-top: 40px;
+  margin-inline: auto;
+  padding: 32px;
+}
+
+.bill {
+  width: auto;
+  height: 48px;
+  position: relative;
+}
+
+.bill-input {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background: #f3f9fa;
+  padding: 1rem;
+  padding-left: 2rem;
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.bill img {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 1rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"] {
+  -ms-appearance: none;
+} */
+
+.input-panel h3 {
+  color: #5e7a7d;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.tip h3 {
+  color: #5e7a7d;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.tip button {
+  border: none;
+  width: 146.631px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #00474b;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.tip input {
+  background: #f3f9fa;
+  border: none;
+  width: 147.814px;
+  height: 48px;
+  border-radius: 5px;
+  color: #547878;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 17px;
+}
+
+.green {
+  background-color: #26c2ae !important;
+}
+
+.custom {
+  color: #547878 !important;
+  background-color: #f3f9fa !important;
+}
+
+.number-of-people {
+  width: auto;
+  height: 48px;
+  position: relative;
+}
+
+.number-of-people input {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background: #f3f9fa;
+  padding: 1rem;
+  padding-left: 2rem;
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.number-of-people img {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 1rem;
+}
+
+.calculation {
+  height: auto;
+  width: auto;
+  padding: 24px;
+  border-radius: 15px;
+  margin-top: 3rem;
+  background: #00474b;
+}
+.calculation h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.calculation span {
+  color: #7f9d9f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.calculation h3 {
+  color: #26c2ae;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.667px;
+}
+
+.total {
+  margin-top: 25px;
+}
+
+.calculation-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculation button {
+  margin-top: 32px;
+  font-family: "Space Mono";
+  border: none;
+  width: auto;
+  height: 48px;
+  width: 100%;
+  border-radius: 5px;
+  background: #26c2ae;
+  color: #00474b;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.calculation button:hover {
+  background: #0d686d;
+}
+
+.hover1:hover {
+  background: #9fe8df;
+}
+
+.bill-input:hover {
+  border: 2px solid #26c2ae;
+}
+
+.number-of-people-title {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.number-of-people-title span {
+  opacity: 0;
+}
+
+.number-of-people-title.error-quantity span {
+  color: #e17457;
+  font-weight: 700;
+  font-size: 16px;
+  opacity: 1;
+}
+
+#people {
+  border: 2px solid black;
+}
+
+#people.invalid {
+  border: 2px solid #e17052;
+}
