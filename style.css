@@ -14,22 +14,21 @@ body {
 header img {
   display: flex;
   margin-inline: auto;
-  margin-top: 50px;
+  margin-top: 3.1rem;
 }
 
-.input-panel {
-  border-radius: 25px 25px 0px 0px;
+main {
+  border-radius: 1.5rem 1.5rem 0 0;
   background: #fff;
   max-width: 375px;
-  height: auto;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   margin-inline: auto;
-  padding: 32px;
+  padding: 2rem;
 }
 
 .bill {
-  width: auto;
-  height: 48px;
+  width: 100%;
+  height: 3rem;
   position: relative;
 }
 
@@ -42,7 +41,12 @@ header img {
   border: none;
   width: 100%;
   height: 100%;
+  font-weight: 700;
   outline: none;
+  text-align: end;
+
+  border: 0px solid #26c2ae;
+  transition: all 0.2s ease;
 }
 
 .bill img {
@@ -58,31 +62,21 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-input[type="number"] {
-  -ms-appearance: none;
-} */
-
-.input-panel h3 {
+label,
+.tip-container h3 {
   color: #5e7a7d;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 6px;
 }
 
-.tip h3 {
-  color: #5e7a7d;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 16px;
+.tip-container h3 {
+  margin-bottom: 1rem;
 }
 
 .tip button {
   border: none;
-  width: 146.631px;
+  width: 48%;
   height: 48px;
   border-radius: 5px;
   background-color: #00474b;
@@ -130,6 +124,8 @@ input[type="number"] {
   width: 100%;
   height: 100%;
   outline: none;
+  text-align: end;
+  font-weight: 700;
 }
 
 .number-of-people img {
@@ -221,9 +217,41 @@ input[type="number"] {
 }
 
 #people {
-  border: 2px solid black;
+  border: none;
 }
 
 #people.invalid {
   border: 2px solid #e17052;
+}
+
+@media only screen and (min-width: 1440px) {
+  main {
+    max-width: 920px;
+    height: auto;
+    display: flex;
+    padding: 48px;
+    align-items: center;
+    gap: 48px;
+  }
+  .input-panel,
+  .calculation {
+    width: 50%;
+  }
+
+  .tip button {
+    width: 40%;
+  }
+
+  .calculation {
+    height: 417px;
+    border-radius: 15px;
+  }
+
+  .calculation-row {
+    margin-bottom: 53px;
+  }
+
+  .calculation h3 {
+    font-size: 48px;
+  }
 }

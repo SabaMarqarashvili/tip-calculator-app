@@ -9,49 +9,51 @@
   </head>
   <body>
     <header>
-      <img src="./images/logo.svg" alt="" />
+      <img src="./images/logo.svg" alt="logoimg" />
     </header>
     <main>
       <div class="input-panel">
-        <h3>Bill</h3>
+        <label for="inp">Bill</label>
         <div class="bill">
           <img src="./images/icon-dollar.svg" alt="dolarimg" />
-          <input type="number" id="inp" class="bill-input" dir="rtl" />
+          <input type="number" id="inp" class="bill-input" />
         </div>
-        <div class="tip">
+        <div class="tip-container">
           <h3>Select Tip %</h3>
-          <button class="button">5%</button>
-          <button class="button hover1">10%</button>
-          <button class="green button">15%</button>
-          <button class="button">25%</button>
-          <button class="button">50%</button>
-          <input type="number" id="custom" placeholder="Custom" />
+          <div class="tip">
+            <button class="button">5%</button>
+            <button class="button hover1">10%</button>
+            <button class="green button">15%</button>
+            <button class="button">25%</button>
+            <button class="button">50%</button>
+            <input type="number" id="custom" placeholder="Custom" />
+          </div>
         </div>
         <div class="number-of-people-title">
           <h3>Number of People</h3>
           <span>Cant Be Zero</span>
         </div>
         <div class="number-of-people">
-          <input type="number" id="people" class="people-input" dir="rtl" />
+          <input min="0" type="number" id="people" class="people-input" />
           <img src="./images/icon-person.svg" alt="personimg" />
         </div>
-        <div class="calculation">
-          <div class="calculation-row">
-            <div>
-              <h4>Tip Amount</h4>
-              <span>/ person</span>
-            </div>
-            <h3 id="tip-amount">$0.00</h3>
+      </div>
+      <div class="calculation">
+        <div class="calculation-row">
+          <div>
+            <h4>Tip Amount</h4>
+            <span>/ person</span>
           </div>
-          <div class="total calculation-row">
-            <div>
-              <h4>Total</h4>
-              <span>/ person</span>
-            </div>
-            <h3 id="total-result">$0.00</h3>
-          </div>
-          <button id="reset">Reset</button>
+          <h3 id="tip-amount">$0.00</h3>
         </div>
+        <div class="total calculation-row">
+          <div>
+            <h4>Total</h4>
+            <span>/ person</span>
+          </div>
+          <h3 id="total-result">$0.00</h3>
+        </div>
+        <button id="reset">Reset</button>
       </div>
     </main>
   </body>
